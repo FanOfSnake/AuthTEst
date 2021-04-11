@@ -46,7 +46,7 @@ namespace AuthTEst.Controllers
                     if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
                         return Redirect(model.ReturnUrl);
                     else
-                        RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Home");
                 }
                 else
                     ModelState.AddModelError("", "Неправильный логин и(или) пароль");
