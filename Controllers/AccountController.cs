@@ -37,7 +37,7 @@ namespace AuthTEst.Controllers
                     Year = model.Year
                 };
 
-                // adding the user
+                // adding the user in BD
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
