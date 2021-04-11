@@ -6,12 +6,12 @@ namespace AuthTEst.ViewModels
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "Логин")]
-        public string Login { get; set; }
+        [Display(Name = "Email")]
+        public string Email { get; set; }
 
         [Required]
         [Display(Name = "Год рождения")]
-        public int YearOfBirth { get; set; }
+        public int Year{ get; set; }
 
         [Required]
         [DataType(DataType.Password)]
